@@ -8,10 +8,6 @@ import { bindActionCreators } from 'redux';
 // aka: Smart Components
 class BookList extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     renderList() {
         return this.props.books.map((book) => {
             return (
