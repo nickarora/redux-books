@@ -1,4 +1,4 @@
-# ReduxTinder
+# ReduxBooks
 
 ###Getting Started###
 

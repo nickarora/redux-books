@@ -1,7 +1,7 @@
 {
-  "name": "redux-tinder",
+  "name": "redux-books",
   "version": "1.0.0",
-  "description": "Simple clone of tinder's basic functionality using react/redux",
+  "description": "Simple book selector using react/redux",
   "main": "index.js",
   "repository": "https://github.com/nickarora/redux-tinder.git",
   "scripts": {
