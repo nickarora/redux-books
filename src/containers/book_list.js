@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { selectBook } from '../actions/index';
+import { bindActionCreators } from 'redux';
 
 // container is a react component that has a direct connection to the state
 // the state is managed by redux (and its associated reducers)
@@ -35,8 +37,15 @@ function mapStateToProps(state) {
     }
 }
 
-// connect(mapStateToProps)
+// whenever selectBook is called it should be dispatched to ALL reducers
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ selectBook: selectBook }, dispatch);
+}
+
+
+// connect(mapStateToProps, mapDispatchToProps)
 // connects a react componnent to a redux store
+// connects action creator to a component
 // returns a function that needs to be called using the component you are mapping to
 // as an argument
-export default connect(mapStateToProps)(BookList);
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);

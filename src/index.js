@@ -16,6 +16,7 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 // createStore creates a redux store that holes the complete state tree of the app
 // createStore(reducer, [initial state]);
+// here we are calling create store on ./reducers -- which causes it to look for ./reducers/index.js
 
 // <Provider store>
 // makes the Redux store available to the connect() calls in smart components!
